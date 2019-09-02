@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+    background: #f9f9f9;
+}
+
+.navbar.navbar-dark {
+  background: #45B39D;
+  border-bottom: 1px solid rgba(0, 0, 0, .15);
+  box-shadow: none;
+
+  .navbar-brand {
+    img {
+      height: 40px;
+    }
+  }
+}
+
+.btn-primary{
+    background-color: #000;
+    color: #EA57A3;
+    border-color: #000; 
+    padding: 8px 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}

@@ -1,0 +1,27 @@
+<div *ngIf="hasAlbums()" class="container-fluid">
+  <div class="albums-container">
+    <div class="tittle-head">
+      <h1>New Release <span>New</span></h1>
+      <a href="">
+        <h4>See all</h4>
+      </a>
+    </div>
+  <div class="row">
+    <p *ngIf="!(infoSvc.albums && infoSvc.albums.length)">No Record found</p>
+    <div class="col-sm-12 col-md-2" *ngFor="let album of infoSvc.albums">
+      <div class="album">
+        <div class="hover-events-parent">
+          <a (click)="viewAlbum(album.id)">
+            <svg width="20" height="24" viewBox="0 0 20 24">
+              <path class="fill_path" data-value="playlist" data-type="play" fill-rule="evenodd" d="M0 0v24l20-12z">
+              </path>
+            </svg>
+          </a>
+        </div>
+        <img class="w-100" [src]="sanitizer.bypassSecurityTrustResourceUrl(album.images[1].url)" alt="" />       
+      </div>
+      <p>{{album.name}}</p>
+    </div>
+  </div>
+</div>
+</div>

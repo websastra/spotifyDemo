@@ -1,0 +1,76 @@
+.albums-container {
+  margin-top: 10px;
+
+  .tittle-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: 1.8em;
+      font-weight: 700;
+      color: #444;
+
+      span {
+        display: inline-block;
+        padding: 8px 13px;
+        background: #EA57A3;
+        font-size: 0.5em;
+        color: #fff;
+        border-radius: 0.3em;
+        vertical-align: middle;
+      }
+    }
+
+    a {
+      h4 {
+        font-size: 1.2em;
+        color: #EA57A3;
+      }
+    }
+  }
+
+  .album {
+    cursor: pointer;
+    position: relative;
+    img{
+        border-radius: 5px;
+    }
+    
+    .hover-events-parent {
+      display: none;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      a {
+        background: rgba(0, 0, 0, .65);
+        width: 52px;
+        height: 52px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg .fill_path {
+          fill: #fff;
+        }
+
+        &:hover {
+          background-color: #000;
+        }
+      }
+    }
+
+    &:hover {
+      .hover-events-parent {
+        display: flex;
+      }
+    }
+  }
+  p{
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    text-transform:uppercase;
+}
+}

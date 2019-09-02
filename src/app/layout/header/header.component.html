@@ -1,0 +1,27 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark">
+    <mdb-navbar-brand><a class="navbar-brand" href="#"><img src="../../../assets/logo.svg"></a></mdb-navbar-brand>
+    <links>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link waves-light" routerLink="/" mdbWavesEffect>New Relase</a>
+            </li>
+        </ul> 
+        <div class="input-group" style="width:250px; margin-right:10px;">
+            <input  type="text" class="form-control" [formControl]="query" placeholder="Search for Songs...">
+        </div>
+        <button *ngIf="user.display_name" mdbDropdownToggle type="button" mdbBtn class="dropdown-toggle waves-light"
+            mdbWavesEffect>
+            {{user.display_name}}
+        </button>
+
+        <div class="dropdown-menu dropdown-primary">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="divider dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+        <button *ngIf="!user.display_name" type="button" class="btn btn-primary" mdbWavesEffect (click)="login()">Login</button>          
+    </links>
+
+</mdb-navbar>

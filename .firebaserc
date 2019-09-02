@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "spotifydemo-3a4a0": {
+      "hosting": {
+        "spotify": [
+          "spotifydemo-3a4a0"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "spotifydemo-3a4a0"
+  }
+}

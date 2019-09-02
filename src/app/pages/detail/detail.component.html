@@ -1,0 +1,5 @@
+<div *ngFor="let track of tracks" class="container">
+<iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(track)" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+</div>
+<!-- <iframe src="https://open.spotify.com/embed/track/3RIgHHpnFKj5Rni1shokDj" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+<!-- https://open.spotify.com/embed/album/3RIgHHpnFKj5Rni1shokDj -->
